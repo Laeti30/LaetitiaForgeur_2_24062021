@@ -1,0 +1,374 @@
+/* Définition des polices personnalisées */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('polices/raleway-regular-webfont.eot');
+    src: url('polices/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('polices/raleway-regular-webfont.woff') format('woff'),
+         url('polices/raleway-regular-webfont.ttf') format('truetype'),
+         url('polices/raleway-regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+.flexboxCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexboxSpacebetween {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexboxSpacearound {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: black;
+}
+
+/* #bloc_page {
+    width: 1200px;
+    margin: auto;
+} */
+
+.noBorder {
+    border: none;
+}
+
+.textBold {
+    font-weight: solid;
+}
+
+/* Couleurs */
+
+.colorLightBlue {
+    color: #DEEBFF;
+}
+
+.colorDarkBlue {
+    color: #0065FC;
+}
+
+.colorGrey {
+    color: #f2f2f2;
+}
+
+.backgroundGrey {
+    background-color: #f2f2f2;
+}
+
+.backgroundBlue {
+    background-color: #0065FC;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#titre_principal {
+    display: flex;
+    flex-direction: column;
+} 
+
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img {
+    width: 100px;
+    height: 60px;
+}
+
+h1 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    margin-right: 15px;
+}
+
+nav a {
+    font-size: 0.8em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+/*Section 1 - Recherche de la ville */
+
+.ville {
+    width: 400px;
+    border-radius: 10px;
+    border: 0.5px solid #f2f2f2;
+    margin-top: 15px;
+}
+
+.iconMap {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px 0 0 10px;
+}
+
+.searchArea {
+    height: 50px;
+    width: 230px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.paddingSearch {
+    padding-left: 20px ;
+}
+
+.searchButton {
+    height: 50px;
+    width: 120px;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Section 1 - Filtres */
+
+#filtre {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.marginFiltreTitre {
+    margin-right: 20px;
+}
+
+.filtreTextIcon {
+    border: 3px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.filtreTextIcon:hover {
+    background-color: #0065FC;
+    color: white
+}
+
+.filtreIcon {
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.filtreText {
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 20px;
+    border-radius:0 25px 25px 0;
+    font-weight: bold;
+}
+
+/* Section 1 - Info */
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.infoIcon {
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid #f2f2f2;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+/* Section 2 - Hébergements */
+
+.flexboxSpacearound {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sizeHerbergement {
+    flex: 2;
+    height: 650px;
+    margin-right: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+} 
+
+.backgroundHotel {
+    width: 30%;
+    height: 225px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.bloc1 {
+    margin-bottom: 30px;
+}
+
+.bloc2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.marginDataHotel {
+    margin-left:10px ;    
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.imageHotel1 {
+    width: 100%;
+    height: 120px;
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageHotel2 {
+    width: 100%;
+    height: 120px;
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageHotel3 {
+    width: 100%;
+    height: 120px;
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageHotel4 {
+    width: 100%;
+    height: 120px;
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageHotel5 {
+    width: 100%;
+    height: 120px;
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageHotel6 {
+    width: 100%;
+    height: 120px;
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+
+/* Section 2 - Aside "Les plus populaires" */
+
+aside {
+    flex: 1;
+    height: 650px;
+    margin-left: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+/* .marginDataPopulaire {
+    margin-top: 20px;
+    margin-bottom: 10px;
+} */
+
+.imagePopulaire1 {
+    width: 40%;
+    height: 140px;
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 0 0 25px;
+}
+
+.imagePopulaire2 {
+    width: 40%;
+    height: 140px;
+    background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 0 0 25px;
+}
+
+.imagePopulaire3 {
+    width: 40%;
+    height: 140px;
+    background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 0 0 25px;
+}
+
+.backgroundPopulaire {
+    height: auto;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.backgroundPopulaire12 {
+    margin-bottom: 30px;
+}
+
+.sizeDataPopulaire {
+    width: 50% ;  
+    padding-left: 5%;  
+    padding-right: 5%;
+
+}
