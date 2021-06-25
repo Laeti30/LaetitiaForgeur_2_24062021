@@ -31,22 +31,28 @@
     align-items: center;
 }
 
+.flexboxColumnBetween {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 body {
     font-family: 'Raleway', Arial, sans-serif;
     color: black;
 }
 
-/* #bloc_page {
-    width: 1200px;
+#bloc_page {
+    width: 1440px;
     margin: auto;
-} */
+} 
 
 .noBorder {
     border: none;
 }
 
 .textBold {
-    font-weight: solid;
+    font-weight: bold;
 }
 
 /* Couleurs */
@@ -82,22 +88,28 @@ header {
 #titre_principal {
     display: flex;
     flex-direction: column;
+    padding-top: 40px;
 } 
 
 #logo {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 20px;
 }
 
 #logo img {
     width: 100px;
-    height: 60px;
+    height: 50px;
 }
 
 h1 {
     font-size: 1.2em;
     font-weight: bold;
+}
+
+.marginUp {
+    margin-top: -5px;
 }
 
 /* Navigation */
@@ -120,7 +132,7 @@ nav a {
 /*Section 1 - Recherche de la ville */
 
 .ville {
-    width: 400px;
+    width: 420px;
     border-radius: 10px;
     border: 0.5px solid #f2f2f2;
     margin-top: 15px;
@@ -134,7 +146,7 @@ nav a {
 
 .searchArea {
     height: 50px;
-    width: 230px;
+    width: 235px;
     font-size: 18px;
     color: black;
     font-weight: bold;
@@ -146,7 +158,7 @@ nav a {
 
 .searchButton {
     height: 50px;
-    width: 120px;
+    width: 135px;
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
@@ -162,7 +174,7 @@ nav a {
 }
 
 .marginFiltreTitre {
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .filtreTextIcon {
@@ -179,18 +191,17 @@ nav a {
 
 .filtreIcon {
     border-radius: 25px;
-    width: 52px;
-    height: 52px;
+    width: 53px;    /* 53px et non 50px pour recouvrir la bordure grise de 3px */
+    height: 53px;    
     color: #0065FC;
     background-color: #DEEBFF;
 }
 
 .filtreText {
     height: 50px;
-    padding-left: 10px;
+    padding-left: 15px;
     padding-right: 20px;
     border-radius:0 25px 25px 0;
-    font-weight: bold;
 }
 
 /* Section 1 - Info */
@@ -371,4 +382,116 @@ aside {
     padding-left: 5%;  
     padding-right: 5%;
 
+}
+
+/* Section 3 - Activites */
+
+.activites {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.blocActivites {
+    width: 25%;
+    height: 450px;
+}
+
+.backgroundActivites1 {
+    width: 90%;
+    height: 445px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.backgroundActivites2 {
+    width: 90%;
+    height: 240px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.backgroundActivites3 {
+    width: 90%;
+    height: 165px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.backgroundActivites4 {
+    width: 90%;
+    height: 445px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.backgroundActivites5 {
+    width: 90%;
+    height: 195px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.backgroundActivites6 {
+    width: 90%;
+    height: 210px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #f2f2f2;
+}
+
+.marginDataActivites {
+    margin-left:10px ;    
+}
+
+.imageActivites1 {
+    width: 100%;
+    height: 390px;
+    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageActivites2 {
+    width: 100%;
+    height: 180px;
+    background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageActivites3 {
+    width: 100%;
+    height: 110px;
+    background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageActivites4 {
+    width: 100%;
+    height: 390px;
+    background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageActivites5 {
+    width: 100%;
+    height: 140px;
+    background-image: url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
+}
+
+.imageActivites6 {
+    width: 100%;
+    height: 150px;
+    background-image: url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 25px 25px 0 0;
 }
