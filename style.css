@@ -47,6 +47,10 @@ body {
     font-weight: bold;
 }
 
+h1 {
+    font-size: 1.4em;
+}
+
 /* Couleurs */
 
 .colorLightBlue {
@@ -69,22 +73,48 @@ body {
     background-color: #0065FC;
 }
 
-/* Header */
+/* Section 1 - Header */
 
 header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    height: 200px;
+    align-items: center;
+    height: 100px;
 }
 
-h1 {
-    font-size: 1.4em;
+#logo img {
+    width: 100px;
+    height: 50px;
 }
 
-/* Navigation */
+nav {
+    display: flex;
+}
 
+nav a {
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: black
+}
+
+.links {
+    padding-right: 30px;
+}
+
+.linkSignUp {
+    padding-right: 30px;
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.links a:hover {
+    border-top: 1px #0065FC solid;
+    color: #0065FC;
+}
+
+/* Section 1 - Header - Navigation */
+/*
 .navBar {
     height: 100px;
     width: 100%
@@ -107,27 +137,34 @@ h1 {
     height: 99px;
     width: 140px;
     border-top: 1px #0065FC solid;
+    color: #0065FC;
 }
 
 .link2 {
+    height: 99px;
+    width: 140px;
+    border-top: 1px #f2f2f2;
     color: black;
 }
 
 .link3 {
     font-weight: bold;
+    color: #0065FC;
 }
 
 nav a {
     text-decoration: none;
-    color:#0065FC;
+    color:black;
 }
+*/
 
 
-/*Section 1 - Recherche de la ville */
 
-.ville {
+/* Section 2 - Recherche de la ville */
+
+.city {
     width: 420px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 0.5px solid #f2f2f2;
     margin-top: 15px;
 }
@@ -135,7 +172,7 @@ nav a {
 .iconMap {
     height: 50px;
     width: 50px;
-    border-radius: 10px 0 0 10px;
+    border-radius: 15px 0 0 15px;
 }
 
 .searchArea {
@@ -155,35 +192,48 @@ nav a {
     width: 135px;
     color: white;
     cursor: pointer;
-    border-radius: 0 10px 10px 0;
+    border-radius: 0 15px 15px 0;
 }
 
-/* Section 1 - Filtres */
+.searchButton i {
+    display: none;
+}
 
-#filtre {
+/* Section 2 - Filtre */
+
+#filter {
     display: flex;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 
-.marginFiltreTitre {
+.filterList {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.filterTitle {
     margin-right: 30px;
+    padding-bottom: 10px;
+    font-size: 1.2em;
 }
 
-.filtreTextIcon {
+.filterTextIcon {
     border: 3px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
     margin-right: 20px;
+    margin-bottom: 10px;
 }
 
-.filtreTextIcon:hover {
+.filterTextIcon:hover {
     background-color: #0065FC;
     color: white
 }
 
-.filtreIcon {
+.filterIcon {
     border-radius: 25px;
     width: 53px;    /* 53px et non 50px pour recouvrir la bordure grise de 3px */
     height: 53px;    
@@ -191,14 +241,14 @@ nav a {
     background-color: #DEEBFF;
 }
 
-.filtreText {
+.filterText {
     height: 50px;
     padding-left: 15px;
     padding-right: 20px;
     border-radius:0 25px 25px 0;
 }
 
-/* Section 1 - Info */
+/* Section 2 - Info */
 
 .info {
     display: flex;
@@ -214,7 +264,7 @@ nav a {
     margin-right: 15px;
 }
 
-/* Section 2 - Hébergements */
+/* Section 3 - Hébergements */
 
 .flexboxSpacearound {
     display:flex;
@@ -222,7 +272,7 @@ nav a {
     align-items: center;
 }
 
-#hebergement {
+#accomodations {
     flex: 2;
     height: 650px;
     margin-right: 20px;
@@ -232,14 +282,6 @@ nav a {
     background-color: #f2f2f2;
 } 
 
-.backgroundHotel {
-    width: 30%;
-    height: 225px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 25px;
-}
-
 .bloc1 {
     margin-bottom: 30px;
 }
@@ -247,6 +289,24 @@ nav a {
 .bloc2 {
     margin-top: 30px;
     margin-bottom: 30px;
+} 
+
+section a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.backgroundHotel {
+    width: 90%;
+    height: 225px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.backgroundHotel:hover {
+    transform: scale(1.1)
 }
 
 .marginDataHotel {
@@ -318,7 +378,7 @@ h3 {
 }
 
 
-/* Section 2 - Aside "Les plus populaires" */
+/* Section 3 - Hébergements - Aside "Les plus populaires" */
 
 aside {
     flex: 1;
@@ -329,12 +389,12 @@ aside {
     padding-right: 40px;
 }
 
-/* .marginDataPopulaire {
+/* .marginDataPopular {
     margin-top: 20px;
     margin-bottom: 10px;
 } */
 
-.imagePopulaire1 {
+.imagePopular1 {
     width: 40%;
     height: 140px;
     background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
@@ -343,7 +403,7 @@ aside {
     border-radius: 25px 0 0 25px;
 }
 
-.imagePopulaire2 {
+.imagePopular2 {
     width: 40%;
     height: 140px;
     background-image: url(images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
@@ -352,7 +412,7 @@ aside {
     border-radius: 25px 0 0 25px;
 }
 
-.imagePopulaire3 {
+.imagePopular3 {
     width: 40%;
     height: 140px;
     background-image: url(images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
@@ -361,83 +421,112 @@ aside {
     border-radius: 25px 0 0 25px;
 }
 
-.backgroundPopulaire {
+.backgroundPopular {
     height: auto;
     background-color: white;
     padding: 5px;
     border-radius: 25px;
 }
 
-.backgroundPopulaire12 {
+.backgroundPopular12 {
     margin-bottom: 30px;
 }
 
-.sizeDataPopulaire {
+.backgroundPopular:hover {
+    transform: scale(1.1);
+}
+
+.sizeDataPopular {
     width: 50% ;  
     padding-left: 5%;  
     padding-right: 5%;
 
 }
 
-/* Section 3 - Activites */
+/* Section 4 - Activites */
 
-#activites {
+#activities {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.blocActivites {
+.blocActivities {
     width: 25%;
     height: 450px;
 }
 
-.backgroundActivites1 {
+.backgroundActivities1 {
     width: 90%;
     height: 445px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.backgroundActivites2 {
+.backgroundActivities2 {
     width: 90%;
     height: 240px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.backgroundActivites3 {
+.backgroundActivities3 {
     width: 90%;
     height: 165px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.backgroundActivites4 {
+.backgroundActivities4 {
     width: 90%;
     height: 445px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.backgroundActivites5 {
+.backgroundActivities5 {
     width: 90%;
     height: 195px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.backgroundActivites6 {
+.backgroundActivities6 {
     width: 90%;
     height: 210px;
     border-radius: 25px;
     box-shadow: 5px 5px 5px #f2f2f2;
 }
 
-.marginDataActivites {
+.backgroundActivities1:hover {
+    transform: scale(1.1);
+} 
+
+.backgroundActivities2:hover {
+    transform: scale(1.1);
+} 
+
+.backgroundActivities3:hover {
+    transform: scale(1.1);
+} 
+
+.backgroundActivities4:hover {
+    transform: scale(1.1);
+} 
+
+.backgroundActivities5:hover {
+    transform: scale(1.1);
+} 
+
+.backgroundActivities6:hover {
+    transform: scale(1.1);
+} 
+
+
+.marginDataActivities {
     margin-left:10px ;    
 }
 
-.imageActivites1 {
+.imageActivities1 {
     width: 100%;
     height: 390px;
     background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
@@ -446,7 +535,7 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-.imageActivites2 {
+.imageActivities2 {
     width: 100%;
     height: 180px;
     background-image: url(images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
@@ -455,7 +544,7 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-.imageActivites3 {
+.imageActivities3 {
     width: 100%;
     height: 110px;
     background-image: url(images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
@@ -464,7 +553,7 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-.imageActivites4 {
+.imageActivities4 {
     width: 100%;
     height: 390px;
     background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
@@ -473,7 +562,7 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-.imageActivites5 {
+.imageActivities5 {
     width: 100%;
     height: 140px;
     background-image: url(images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg);
@@ -482,7 +571,7 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-.imageActivites6 {
+.imageActivities6 {
     width: 100%;
     height: 150px;
     background-image: url(images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
@@ -491,7 +580,7 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-/* Footer */
+/* Section 5 - Footer */
 
 .footer {
     height: 235px;
@@ -502,4 +591,109 @@ aside {
 
 .blocFooter {
     height: 150px;
+}
+
+/* Format Iphone 8 */
+
+@media all and (max-width: 600px)  {
+
+    /* Header - Mobile */
+
+    header {
+        margin-bottom: 30px;
+        flex-direction: column;
+        height: 140px;
+    }
+    
+    #logo img {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    }
+    
+    .linkSignUp {
+        position: absolute;
+        right: 5px;
+        top: 40px;
+    }
+    
+    .links {
+        width: 100%;
+        display: flex;
+    }
+
+    .link {
+        width: 50%;
+        padding-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px #f2f2f2 solid;
+    }
+
+    .links a:hover {
+        border-bottom: 2px #0065FC solid;
+        border-top: none;
+    }
+    
+    /* Search button - Mobile */
+
+    .searchButton span {
+        display: none;
+    }
+
+    .searchButton i {
+        display: inline-block;
+    }
+
+    .searchButton {
+        width: 50px;
+        border-radius: 15px;
+
+    }
+
+    .city {
+        width: 335px;
+ 
+    }
+
+    /* Filtres - Mobile */
+
+}
+
+
+/*#filter {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.marginFilterTitle {
+    margin-right: 30px;
+}
+
+.filterTextIcon {
+    border: 3px solid #f2f2f2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.filterTextIcon:hover {
+    background-color: #0065FC;
+    color: white
+}
+
+.filterIcon {
+    border-radius: 25px;
+    width: 53px;    
+    height: 53px;    
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.filterText {
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 20px;
+    border-radius:0 25px 25px 0;
 }
