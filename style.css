@@ -481,12 +481,13 @@ aside h3 {
     body {
         width: 100%;
     }
-    
+
     /* Header - Mobile */
 
     header {
         margin-bottom: 30px;
         flex-direction: column;
+        align-items: stretch;
         height: 140px;
     }
     
@@ -505,6 +506,7 @@ aside h3 {
     .links {
         width: 100%;
         display: flex;
+        padding-right: 0px;
     }
 
     .link {
