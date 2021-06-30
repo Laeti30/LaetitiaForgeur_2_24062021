@@ -32,11 +32,25 @@ body {
     justify-content: space-between;
 }
 
+.flexboxColumnBetween {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .flexboxColumnCenter {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.flexboxWrap {
+    flex-wrap: wrap;
+}
+
+.flexboxWrapReverse {
+    flex-wrap: wrap-reverse;
 }
 
 .noBorder {
@@ -49,6 +63,16 @@ body {
 
 h1 {
     font-size: 1.4em;
+}
+
+h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
 }
 
 /* Couleurs */
@@ -205,7 +229,6 @@ nav a {
     display: flex;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 40px;
     flex-wrap: wrap;
 }
 
@@ -259,22 +282,15 @@ nav a {
 .infoIcon {
     width: 20px;
     height: 20px;
-    border: 1.5px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 25px;
     margin-right: 15px;
 }
 
 /* Section 3 - Hébergements */
 
-.flexboxSpacearound {
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #accomodations {
     flex: 2;
-    height: 650px;
     margin-right: 20px;
     border-radius: 10px;
     padding-left: 30px;
@@ -282,99 +298,57 @@ nav a {
     background-color: #f2f2f2;
 } 
 
-.bloc1 {
-    margin-bottom: 30px;
+#accomodations h2 {
+    margin-top: 40px;
 }
 
-.bloc2 {
-    margin-top: 30px;
+.accomodationsBox {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 30px;
-} 
+}
 
 section a {
     text-decoration: none;
     color: black;
-    width: 100%;
 }
 
 .backgroundHotel {
-    width: 90%;
-    height: 225px;
+    width: 235px;
+    height: 200px;
+    border: 2px solid white;
     background-color: white;
     padding: 5px;
     border-radius: 25px;
+    margin-bottom: 30px;
 }
 
 .backgroundHotel:hover {
     transform: scale(1.1)
 }
 
-.marginDataHotel {
-    margin-left:10px ;    
+.imageHotel {
+    border-radius: 25px 25px 0 0;
+    width: 235px;
+    height: 113px;
+    object-fit: cover;
 }
 
-h2 {
+.dataHotel {
+    margin-left:10px;
+    margin-top: -5px;
+}
+
+#accomodations p {
+    font-size: 0.9em;
+    margin-bottom: 2px;
+    margin-top: -10px;
+}
+
+.showMore {
+    font-weight: bold;
     font-size: 1.3em;
-    font-weight: bold;
-}
-
-h3 {
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.imageHotel1 {
-    width: 100%;
-    height: 120px;
-    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px 25px 0 0;
-}
-
-.imageHotel2 {
-    width: 100%;
-    height: 120px;
-    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px 25px 0 0;
-}
-
-.imageHotel3 {
-    width: 100%;
-    height: 120px;
-    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px 25px 0 0;
-}
-
-.imageHotel4 {
-    width: 100%;
-    height: 120px;
-    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px 25px 0 0;
-}
-
-.imageHotel5 {
-    width: 100%;
-    height: 120px;
-    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px 25px 0 0;
-}
-
-.imageHotel6 {
-    width: 100%;
-    height: 120px;
-    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 25px 25px 0 0;
+    margin-bottom: 45px;
 }
 
 
@@ -382,17 +356,28 @@ h3 {
 
 aside {
     flex: 1;
-    height: 650px;
+    height: 620px;
     margin-left: 20px;
     border-radius: 10px;
     padding-left: 30px;
     padding-right: 40px;
 }
 
-/* .marginDataPopular {
-    margin-top: 20px;
-    margin-bottom: 10px;
-} */
+.sizeDataPopular {
+    width: 50% ;  
+    padding-left: 5%;  
+    padding-right: 5%;
+}
+
+aside p {
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 40px;
+}
+
+aside h3 {
+    margin-top: 0px;
+}
 
 .imagePopular1 {
     width: 40%;
@@ -434,13 +419,6 @@ aside {
 
 .backgroundPopular:hover {
     transform: scale(1.1);
-}
-
-.sizeDataPopular {
-    width: 50% ;  
-    padding-left: 5%;  
-    padding-right: 5%;
-
 }
 
 /* Section 4 - Activites */
@@ -656,44 +634,82 @@ aside {
     }
 
     /* Filtres - Mobile */
+    /* Pas de modifications nécessaires */
 
+    /* Les plus populaires - Mobile */
+    aside {
+        margin: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px;
+        margin-bottom: 30px;
+        height: 580px;
+    }
+
+    .backgroundPopular12 {
+        margin-bottom: 10px;
+    }
+
+    /* Hébergements - Mobile */
+
+    #accomodations {
+        margin: 0px;
+        border-radius: 0px;
+    }
+
+    #accomodations h2 {
+        margin-top: 0px;
+    }
 }
 
 
-/*#filter {
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
 
-.marginFilterTitle {
-    margin-right: 30px;
-}
-
-.filterTextIcon {
-    border: 3px solid #f2f2f2;
-    height: 50px;
-    border-radius: 30px;
+/*
+#accomodations {
+    flex: 2;
+    height: 620px;
     margin-right: 20px;
+    border-radius: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f2f2f2;
+} 
+
+#accomodations h2 {
+    margin-top: 40px;
 }
 
-.filterTextIcon:hover {
-    background-color: #0065FC;
-    color: white
+#accomodations p {
+    font-size: 0.9em;
+    margin-bottom: 2px;
+    margin-top: -10px;
 }
 
-.filterIcon {
+.marginDataHotel {
+    margin-left:10px;
+    margin-top: -5px;
+}
+
+.bloc1 {
+    margin-bottom: 30px;
+}
+
+.bloc2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+section a {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.backgroundHotel {
+    width: 90%;
+    height: 200px;
+    background-color: white;
+    padding: 5px;
     border-radius: 25px;
-    width: 53px;    
-    height: 53px;    
-    color: #0065FC;
-    background-color: #DEEBFF;
 }
-
-.filterText {
-    height: 50px;
-    padding-left: 15px;
-    padding-right: 20px;
-    border-radius:0 25px 25px 0;
-}
+*/
