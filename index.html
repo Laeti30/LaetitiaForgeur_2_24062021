@@ -11,23 +11,6 @@
     
     <body>
         <!-- Section 1 - Header -->    
-        <!--
-        <header>
-            <nav class="navBar flexboxSpacebetween">
-                <div class="logo"><img src="images/logo/Reservia.svg" alt="Logo de Reservia"/></div>
-                <div class="sizeLinks flexboxSpacearound">
-                    <div class="link1 flexboxCenter"><a class="colorDarkBlue" href="#hebergement">Hébergements</a></div>
-                    <div class="link2 flexboxCenter"><a href="#activites">Activités</a></div>
-                    <div class="link3 flexboxCenter"><a class="colorDarkBlue" href="#">S'inscrire</a></div>
-                </div>
-            </nav>  
-          
-            <div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-        </header>
-        -->
         <header>
             <div id="logo">
                 <img src="images/logo/Reservia.svg" alt="Reservia"/>
@@ -57,19 +40,19 @@
             <div id="filter">
                 <div class="filterTitle"><h3>Filtres</h3></div>
                 <div class="filterList">
-                    <div class="filterTextIcon flexboxSpacebetween">
+                    <div class="filterTextIcon">
                         <i class="fas fa-money-bill-wave fa-lg filterIcon flexboxCenter"></i>
                         <div class="filterText flexboxCenter textBold">Économique</div>
                     </div>
-                    <div class="filterTextIcon flexboxSpacebetween">
+                    <div class="filterTextIcon">
                         <i class="fas fa-child fa-lg filterIcon flexboxCenter"></i>
                         <div class="filterText flexboxCenter textBold">Familial</div>
                     </div>
-                    <div class="filterTextIcon flexboxSpacebetween">
+                    <div class="filterTextIcon">
                         <i class="fas fa-heart fa-lg filterIcon flexboxCenter"></i>
                         <div class="filterText flexboxCenter textBold">Romantique</div>
                     </div>
-                    <div class="filterTextIcon flexboxSpacebetween">
+                    <div class="filterTextIcon">
                         <i class="fas fa-dog fa-lg filterIcon flexboxCenter"></i>
                         <div class="filterText flexboxCenter textBold">Animaux autorisés</div>
                     </div>
@@ -81,14 +64,14 @@
             </div>
         </section>    
     <!-- Section 3 - Hébergements -->                
-        <section class="flexboxSpacearound flexboxWrap">
-            <div id="accomodations" class="flexboxColumnBetween">
+        <section class="accomodationsAndPopularBox">
+            <div id="accomodations">
                 <h2>Hébergements à Marseille</h2>
-                <div class="flexboxSpacebetween flexboxWrap accomodationsBox">
+                <div class="accomodationsBox">
                     <a href="#">
                         <div class="backgroundHotel">
                             <img class="imageHotel" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>                            
-                            <div class="flexboxColumnAround dataHotel">
+                            <div class="dataHotel">
                                 <h3>Auberge La Cannebière</h3>
                                 <p>Nuit à partir de <strong>25€</strong></p>
                                 <div>
@@ -104,7 +87,7 @@
                     <a href="#">
                         <div class="backgroundHotel">
                             <img class="imageHotel" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port"/>                            
-                            <div class="flexboxColumnAround dataHotel">
+                            <div class="dataHotel">
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52€</p>
                                 <div>
@@ -120,7 +103,7 @@
                     <a href="#">
                         <div class="backgroundHotel">
                             <img class="imageHotel" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes"/>                            
-                            <div class="flexboxColumnAround dataHotel">
+                            <div class="dataHotel">
                                 <h3>Hôtel Les mouettes</h3>
                                 <p>Nuit à partir de 76€</p>
                                 <div>
@@ -136,7 +119,7 @@
                     <a href="#">
                         <div class="backgroundHotel">
                             <img class="imageHotel" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>                            
-                            <div class="flexboxColumnAround dataHotel">
+                            <div class="dataHotel">
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46€</p>
                                 <div>
@@ -152,7 +135,7 @@
                     <a href="#">
                         <div class="backgroundHotel">
                             <img class="imageHotel" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge lLe Panier"/>                            
-                            <div class="flexboxColumnAround dataHotel">
+                            <div class="dataHotel">
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de <strong>23€</strong></p>
                                 <div>
@@ -168,7 +151,7 @@
                     <a href="#">
                         <div class="backgroundHotel">
                             <img class="imageHotel" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>                            
-                            <div class="flexboxColumnAround dataHotel">
+                            <div class="dataHotel">
                                 <h3>Hôtel chez Amina</h3>
                                 <p>Nuit à partir de 96€</p>
                                 <div>
@@ -186,14 +169,14 @@
             </div>
         <!-- Section 3 - Hébergements - "Les Plus Populaires" -->    
             <aside class="backgroundGrey">
-                <div class="flexboxSpacebetween">
+                <div class="popularBox">
                     <h2>Les plus populaires</h2>
                     <div><i class="fas fa-chart-line fa-2x"></i></div>
                 </div>
                 <a href="#">
                     <div class="flexboxCenter backgroundPopular backgroundPopular12">
-                        <div class="imagePopular1"></div>
-                        <div class="sizeDataPopular">
+                        <img class="imagePopular" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>                            
+                        <div class="dataPopular">
                             <h3>Hôtel Le soleil du matin</h3>
                             <p>Nuit à partir de 128€</p>
                             <div>
@@ -208,8 +191,8 @@
                 </a>
                 <a href="#">
                     <div class="flexboxCenter backgroundPopular backgroundPopular12">
-                        <div class="imagePopular2"></div>
-                        <div class="sizeDataPopular">
+                        <img class="imagePopular" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau"/>                            
+                        <div class="dataPopular">
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                             <p>Nuit à partir de 71€</p>
                             <div>
@@ -224,8 +207,8 @@
                 </a>
                 <a href="#">
                     <div class="flexboxCenter backgroundPopular">
-                        <div class="imagePopular3"></div>
-                        <div class="sizeDataPopular">
+                        <img class="imagePopular" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout Bleu et Blanc"/>                            
+                        <div class="dataPopular">
                             <h3>Hôtel Tout bleu et Blanc</h3>
                             <p>Nuit à partir de 68€</p>
                             <div>
@@ -243,48 +226,49 @@
     <!-- Section 4 - Activités -->    
         <section id="activities">
             <h2>Activités à Marseille</h2>
-            <div class="flexboxSpacebetween">
+            <div class="allActivities">
                 <div class="blocActivities">
                     <a href="#">
                         <div class="backgroundActivities1">
-                            <div class="imageActivities1"></div>
-                            <h3 class="marginDataActivities">Vieux Port</h3>
+                            <img class="imageActivities1" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>                            
+                            <!-- <div class="imageActivities1"></div> -->
+                            <h3 class="dataActivities">Vieux Port</h3>
                         </div>
                     </a>
                 </div>
-                <div class="blocActivities flexboxColumnBetween">
+                <div class="blocActivities">
                     <a href="#">    
                         <div class="backgroundActivities2">
-                            <div class="imageActivities2"></div>
-                            <h3 class="marginDataActivities">Fort de Pomègues</h3>
+                            <img class="imageActivities2" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Port de Pomègues"/>                            
+                            <h3 class="dataActivities">Fort de Pomègues</h3>
                         </div>
                     </a>
                     <a href="#">
                         <div class="backgroundActivities3">
-                            <div class="imageActivities3"></div>
-                            <h3 class="marginDataActivities">Îles du Frioul</h3>
+                            <img class="imageActivities3" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"/>                            
+                            <h3 class="dataActivities">Îles du Frioul</h3>
                         </div>
                     </a>
                 </div>
                 <div class="blocActivities">
                     <a href="#">
                         <div class="backgroundActivities4">
-                            <div class="imageActivities4"></div>
-                            <h3 class="marginDataActivities">Parc National des Calanques</h3>
+                            <img class="imageActivities4" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>                            
+                            <h3 class="dataActivities">Parc National des Calanques</h3>
                         </div>
                     </a>
                 </div>
-                <div class="blocActivities flexboxColumnBetween">
+                <div class="blocActivities">
                     <a href="#">
                         <div class="backgroundActivities5">
-                            <div class="imageActivities5"></div>
-                            <h3 class="marginDataActivities">Notre-Dame-de-la-Garde</h3>
+                            <img class="imageActivities5" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>                            
+                            <h3 class="dataActivities">Notre-Dame-de-la-Garde</h3>
                         </div>
                     </a>
                     <a href="#">
                         <div class="backgroundActivities6">
-                            <div class="imageActivities6"></div>
-                            <h3 class="marginDataActivities">Parc Longchamp</h3>
+                            <img class="imageActivities6" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>                            
+                            <h3 class="dataActivities">Parc Longchamp</h3>
                         </div>
                     </a>
                 </div>
@@ -292,7 +276,7 @@
         </section>
     <!-- Section 5 - Footer -->    
         <footer>
-            <div class="footer backgroundGrey flexboxSpacebetween">
+            <div class="footer backgroundGrey">
                 <div class="blocFooter">
                     <h3>A propos</h3>
                     <p>Fonctionnement du site</p>
