@@ -83,6 +83,10 @@ nav a {
     color: black
 }
 
+.link {
+    padding-top: 30px;
+}
+
 .links {
     padding-right: 30px;
 }
@@ -117,7 +121,6 @@ nav a {
     height: 50px;
     width: 235px;
     font-size: 18px;
-    color: black;
     font-weight: bold;
 }
 
@@ -470,8 +473,20 @@ aside h3 {
 }
 
 .blocFooter {
+    display: flex;
+    flex-direction: column;
     margin-top: 20px;
     height: 150px
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 15px;
+}
+
+footer a:hover {
+    color: #0065FC;
 }
 
 /* Format Iphone 8 */
