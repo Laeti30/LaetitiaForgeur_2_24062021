@@ -211,7 +211,6 @@ nav a {
 .accomodationsAndPopularBox {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;
 }
 
 #accomodations {
@@ -295,7 +294,7 @@ aside {
     padding-bottom: 35px;
 }
 
-.popularBox {
+.popularTitle {
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -331,14 +330,14 @@ aside h2 {
     padding-right: 5%;
 }
 
+aside h3 {
+    margin-top: 0px;
+}
+
 aside p {
     font-size: 0.9em;
     margin-top: -10px;
     margin-bottom: 40px;
-}
-
-aside h3 {
-    margin-top: 0px;
 }
 
 .backgroundPopular:hover {
@@ -360,7 +359,7 @@ aside h3 {
 }
 
 .blocActivities {
-    width: 25%;
+    width: 25%;    
     display:flex;
     flex-direction: column;
 }
@@ -489,7 +488,60 @@ footer a:hover {
     color: #0065FC;
 }
 
-/* Format Iphone 8 */
+/* Format Tablette*/
+
+@media all and (max-width: 1034px) and (min-width: 601px)  {
+    
+    .accomodationsAndPopularBox {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside {
+        margin-left: 0px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+
+    .popularBox {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .imagePopular {
+        height: 135px;
+        width: 235px;
+        border-radius: 25px 25px 0 0 ;
+    }
+
+    .backgroundPopular {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        width: 235px;   
+        border: 2px solid white;
+    }
+
+    .dataPopular {
+        height: 115px;
+        width: 235px;
+        padding-left: 30px;
+    }
+
+    aside h3 {
+        margin-top: 10px;
+    }
+    
+    aside p {
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Format Mobile*/
 
 @media all and (max-width: 600px)  {
 
@@ -565,6 +617,10 @@ footer a:hover {
     /*Pas de modification nécessaire */
 
     /* Les plus populaires - Mobile */
+    .accomodationsAndPopularBox {
+        flex-wrap: wrap-reverse;
+    }
+    
     aside {
         margin: 0px;
         padding-left: 20px;
