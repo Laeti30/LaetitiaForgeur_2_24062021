@@ -3,13 +3,10 @@
 body {
     font-family: 'Raleway', Arial, sans-serif;
     color: black;
-    /*max-width: 1440px;*/
-    width: 80%;
+    max-width: 1335px;
     margin: auto;
 }
-footer {
-    margin-left: -50px;
-}
+
 
 .flexboxCenter {
     display: flex;
