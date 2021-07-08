@@ -7,6 +7,10 @@ body {
     margin: auto;
 }
 
+header, #cityFilterInfo {
+    margin-left: 20px;
+}
+
 .flexboxCenter {
     display: flex;
     justify-content: center;
@@ -15,6 +19,7 @@ body {
 
 h1 {
     font-size: 1.4em;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -75,7 +80,7 @@ nav a {
 }
 
 .link {
-    padding-top: 30px;
+    padding-top: 39px;
 }
 
 .links {
@@ -89,11 +94,16 @@ nav a {
 }
 
 .links a:hover {
-    border-top: 1px #0065FC solid;
+    border-top: 2px #0065FC solid;
     color: #0065FC;
 }
 
 /* Section 2 - Recherche de la ville */
+
+#cityFilterInfo p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 
 .city {
     width: 420px;
@@ -150,6 +160,8 @@ nav a {
 .filterTitle {
     padding-bottom: 10px;
     font-size: 1.2em;
+    margin-right: 20px;
+
 }
 
 .filterTextIcon {
@@ -159,7 +171,7 @@ nav a {
     border: 3px solid #f2f2f2;
     height: 50px;
     border-radius: 30px;
-    margin-left: 20px;
+    margin-right: 15px;
     margin-bottom: 10px;
 }
 
@@ -227,12 +239,16 @@ nav a {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 section a {
     text-decoration: none;
     color: black;
+}
+
+#accomodations a {
+    margin-bottom: 30px;
 }
 
 .backgroundHotel {
@@ -241,8 +257,7 @@ section a {
     background-color: white;
     padding: 5px;
     border-radius: 15px;
-    margin-bottom: 30px;
-    box-shadow: 10px 10px 10px #f2f2f2;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.1);
 }
  
 .imageHotel {
@@ -273,6 +288,10 @@ section a {
     margin-bottom: 45px;
 }
 
+.showMore :hover{
+    text-decoration: underline;
+}
+
 /* Section 3 - Hébergements - Aside "Les plus populaires" */
 
 aside {
@@ -287,7 +306,7 @@ aside {
 .popularTitle {
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
 }
 
 aside h2 {
@@ -306,6 +325,7 @@ aside h2 {
     height: auto;
     padding: 1% 0 1% 1%;
     border-radius: 15px;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.1);
 }
 
 .dataPopular {
@@ -347,16 +367,14 @@ aside p {
 }
 
 .blocActivities {
-    width: 25%;    
+    width: 23%;    
     display:flex;
     flex-direction: column;
-    margin-right: -2%;
 }
 
 .backgroundActivities1, .backgroundActivities2, .backgroundActivities3, .backgroundActivities4, .backgroundActivities5, .backgroundActivities6 {
-    width: 90%;
     border-radius: 20px;
-    box-shadow: 10px 10px 10px #f2f2f2;
+    box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.1);
 }
 
 .backgroundActivities1 {
@@ -439,6 +457,7 @@ aside p {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    margin-right: 30px;
 }
 
 footer a {
@@ -539,11 +558,6 @@ footer a:hover {
         margin-left: 20px;
     }
 
-    .filterTextIcon {
-        margin-left: 0px;
-        margin-right: 5px;
-    }
-
     /* Search button - Mobile */
 
     .searchButton span {
@@ -597,7 +611,6 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
-        margin-right: 0px;
         margin-top: 0px;
     }
 
