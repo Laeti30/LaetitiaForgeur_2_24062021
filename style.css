@@ -319,6 +319,7 @@ aside h2 {
 }
 
 .backgroundPopular{
+    display: flex;
     background-color: white;
     height: auto;
     padding: 1% 0 1% 1%;
@@ -328,19 +329,27 @@ aside h2 {
 }
 
 .dataPopular {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
     padding-left: 5%;  
     padding-right: 5%;  
     width: 55%;
 }
 
 aside h3 {
-    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 aside p {
     font-size: 0.9em;
-    margin-top: -10px;
-    margin-bottom: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.popularStars {
+    margin-top: auto;
+    padding-bottom: 10px;
 }
 
 .backgroundPopular:hover {
