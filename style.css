@@ -7,10 +7,6 @@ body {
     margin: auto;
 }
 
-header, #cityFilterInfo {
-    margin-left: 20px;
-}
-
 .flexboxCenter {
     display: flex;
     justify-content: center;
@@ -18,8 +14,9 @@ header, #cityFilterInfo {
 }
 
 h1 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 h2 {
@@ -94,7 +91,7 @@ nav a {
 }
 
 .links a:hover {
-    border-top: 2px #0065FC solid;
+    border-top: 3px #0065FC solid;
     color: #0065FC;
 }
 
@@ -148,7 +145,7 @@ nav a {
 #filter {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 30px;
     flex-wrap: wrap;
 }
 
@@ -190,7 +187,7 @@ nav a {
 
 .filterText {
     height: 50px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 20px;
     border-radius:0 25px 25px 0;
     font-weight: bold;
@@ -200,8 +197,9 @@ nav a {
 
 #info {
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+    align-items: baseline;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .infoIcon {
@@ -372,6 +370,10 @@ aside p {
     flex-direction: column;
 }
 
+.marginBottomActivities25 {
+    margin-bottom: 40px;
+}
+
 .backgroundActivities1, .backgroundActivities2, .backgroundActivities3, .backgroundActivities4, .backgroundActivities5, .backgroundActivities6 {
     border-radius: 20px;
     box-shadow: 0px 10px 10px rgba(128, 128, 128, 0.1);
@@ -383,7 +385,6 @@ aside p {
 
 .backgroundActivities2 {
     height: 240px;
-    margin-bottom: 40px;
 }
 
 .backgroundActivities3 {
@@ -396,7 +397,6 @@ aside p {
 
 .backgroundActivities5 {
     height: 195px;
-    margin-bottom: 40px;
 }
 
 .backgroundActivities6 {
@@ -449,7 +449,7 @@ aside p {
     flex-wrap: wrap;
     margin-top: 60px;
     padding-left: 50px;
-    padding-right: 30%;
+    padding-right: 25%;
     padding-bottom: 30px;
 }
 
@@ -470,12 +470,17 @@ footer a:hover {
     color: #0065FC;
 }
 
-/* Format Tablette*/
+/* Format petit écran */
 
-@media all and (max-width: 1090px) {
+@media all and (max-width: 1360px) {
     header, #cityFilterInfo, #activities {
         margin-left: 20px;
     }
+}
+
+/* Format Tablette*/
+
+@media all and (max-width: 1090px) {
 
     .accomodationsAndPopularBox {
         display: flex;
@@ -493,6 +498,11 @@ footer a:hover {
 
     #activities {
         margin-right: 20px;
+    }
+
+    .dataActivities {
+        margin-left:10px ;
+        margin-top: 5px;    
     }
 
     .footer {
@@ -548,7 +558,7 @@ footer a:hover {
     }
 
     .links a:hover {
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 3px #0065FC solid;
         border-top: none;
     }
     
@@ -556,6 +566,10 @@ footer a:hover {
 
     #cityFilterInfo {
         margin-left: 20px;
+    }
+
+    .filterTextIcon {
+        margin-right: 10px;
     }
 
     /* Search button - Mobile */
@@ -590,6 +604,7 @@ footer a:hover {
         border-radius: 0px;
         background-color: white;
         padding-left: 20px;
+        margin-top: 20px;
     }
 
     #accomodations h2 {
@@ -598,7 +613,10 @@ footer a:hover {
 
     .backgroundHotel {
         width: 325px;
-        margin-bottom: 30px;
+    }
+
+    #accomodations a {
+        margin-bottom: 15px;
     }
 
     .imageHotel {
@@ -617,19 +635,32 @@ footer a:hover {
     .allActivities {
         display: flex;
         flex-direction: column;
+        margin-top: 10px;
     }
 
     .blocActivities {
         width: 100%;
     }
 
+    .marginBottomActivities25 {
+        margin-bottom: 0px;
+    }
+
+    #activities a {
+        margin-bottom: 25px;
+    }
+
     .backgroundActivities1, .backgroundActivities2, .backgroundActivities3, .backgroundActivities4, .backgroundActivities5, .backgroundActivities6 {
         height: 190px;
-        margin-bottom: 40px;
     }
 
     .imageActivities1, .imageActivities2, .imageActivities3, .imageActivities4, .imageActivities5, .imageActivities6 {
         height: 135px;
+    }
+
+    .dataActivities {
+        margin-left:20px ;
+        margin-top: 15px;    
     }
 
     /* Footer - Mobile */
