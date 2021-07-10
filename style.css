@@ -349,8 +349,7 @@ aside h2 {
     flex-direction: column;
     line-height: 1.5;
     padding-left: 5%;  
-    padding-right: 5%;  
-    width: 55%;
+    width: 60%;
 }
 
 aside h3 {
@@ -518,11 +517,15 @@ footer a:hover {
     }
 
     .backgroundPopular {
-        width: 30%;
+        width: 31%;
     }
 
     .imagePopular {
-        height: 170px;
+        height: 140px;
+    }
+
+    aside h3 {
+        margin-top: 5px;
     }
 
     #accomodations {
