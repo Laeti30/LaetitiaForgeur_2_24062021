@@ -147,6 +147,11 @@ input::placeholder {
     display: none;
 }
 
+.searchButton:hover {
+    background-color: #DEEBFF;
+    color: black;
+}
+
 /* Section 2 - Filtre */
 
 #filter {
@@ -623,8 +628,12 @@ footer a:hover {
         border-radius: 15px;
     }
 
+    .searchArea {
+        width: 200px;
+    }
+
     .city {
-        width: 335px;
+        width: 300px;
     }
 
     /* Les plus populaires - Mobile */
